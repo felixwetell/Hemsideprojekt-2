@@ -4,11 +4,29 @@ body {
 p {
     font-family: Tahoma;
 }
+.header_button {
+    margin-top: 30px;
+    width: 120px;
+    height: 60px;
+    background-color: aliceblue;
+}
+.header_button_link {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    background-color: white;
+
+}
 #main_header {
     background-color: orangered;
     width: 100%;
     height: 300px;
     position: relative;
+}
+#button_header {
+    background-color: chartreuse;
+    width: 100%;
+    height: 120px;
 }
 #main_content {
     background-color: blue;
