@@ -17,16 +17,15 @@ p {
     background-color: white;
 
 }
-#main_header {
-    background-color: orangered;
+#header {
     width: 100%;
-    height: 300px;
-    position: relative;
+    background-color: yellow;
 }
 #button_header {
     background-color: chartreuse;
     width: 100%;
     height: 120px;
+    position: relative;
 }
 #main_content {
     background-color: blue;
