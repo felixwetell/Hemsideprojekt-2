@@ -9,7 +9,8 @@ h1, h2, h3, h4, h5, h6, a, p {
     text-decoration: none;
 }
 #header {
-    width: 2000px;
+    background-color: orangered;
+    width: 1260px;
     height: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -58,19 +59,44 @@ h1, h2, h3, h4, h5, h6, a, p {
     color: blue;
 }
 #main_content {
-    background-color: blue;
     width: 700px;
     height: 600px;
-    margin-top: -41px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     z-index: 1;
 }
-#main_footer {
-    background-color: black;
-    width: 100%;
+#footer {
+    width: 800px;
     height: 100px;
-    float: left;
+    border-top: 2px solid dimgrey;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+}
+#footer_info {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 0;
+}
+#footer_info a{
+    color: blue;
+    text-decoration: underline;
+}
+#colorblind_button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    float: right;
+    background-color: orangered;
+}
+#colorblind_button h4 {
+    text-align: center;
+}
+#colorblind_button:hover h4 {
+    color: whitesmoke;
 }
