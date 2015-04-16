@@ -3,20 +3,27 @@
 <head lang="sv">
     <meta charset="UTF-8">
     <title>Ystad Friskola</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_colorblind.css" />
 
     <script language="javascript">
         function changeStyle(name) {
-            if (name == 'style1')
-                document.getElementById('stylesheet').href = 'css/style.css';
-            else if (name == 'style2')
-                document.getElementById('stylesheet').href = 'css/style_colorblind.css';
+            if (name == 'not_colorblind') {
+                document.getElementsByTagName('link')[1].href = 'css/style.css';
+                document.cookie = "colorblind=false";
+            }
+            else if (name == 'colorblind') {
+                document.getElementsByTagName('link')[1].href = 'css/style_colorblind.css';
+               document.cookie = "colorblind=true";
+                }
+
         }
     </script>
 
 </head>
 <body>
 
+<div id="cookie_acceptans"></div>
 <div id="header">
     <img src="img/ystad_friskola_logo.jpg">
 </div>
@@ -65,16 +72,13 @@
 
 <div id="footer">
     <a href="javascript:changeStyle('style1')">
-        <div id="colorblind_button">
-            <p>Färgblind</p>
-        </div>
-    </a>
-    <a href="javascript:changeStyle('style2')">
+    <a href="javascript:changeStyle('not_colorblind')">
         <div id="not_colorblind_button">
             <p>Inte färgblind</p>
         </div>
     </a>
 
+    <a href="javascript:changeStyle('colorblind')">
 
     <div id="footer_info">
         <p>
