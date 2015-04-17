@@ -1,7 +1,6 @@
 body {
     margin: 0;
     background-color: whitesmoke;
-    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6, a, p {
     font-family: Arial;
@@ -15,14 +14,16 @@ h1, h2, h3, h4, h5, h6, a, p {
     margin-right: auto;
 }
 #header_buttons {
-    width: 2000px;
+    width: 1260px;
     height: 41px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 #header_buttons div  {
     width: 100px;
     height: 40px;
-    margin-left: 3.5%;
+    margin-left: 60px;
     padding-bottom: 10px;
     border: 1px solid orangered;
     border-top: none;
@@ -37,31 +38,30 @@ h1, h2, h3, h4, h5, h6, a, p {
 #header_buttons h4 {
     top: 10px;
 }
-#klass_7_button:hover h4 {
-    color: blue;
+#klass_7_button:hover {
+    background-color: lightblue;
 }
-#klass_8_button:hover h4 {
-    color: blue;
+#klass_8_button:hover {
+    background-color: lightblue;
 }
-#klass_9_button:hover h4 {
-    color: blue;
+#klass_9_button:hover {
+    background-color: lightblue;
 }
-#om_skolan_button:hover h4 {
-    color: blue;
+#om_skolan_button:hover {
+    background-color: lightblue;
 }
-#schema_button:hover h4 {
-    color: blue;
+#schema_button:hover {
+    background-color: lightblue;
 }
-#matsedel_button:hover h4 {
-    color: blue;
+#matsedel_button:hover {
+    background-color: lightblue;
 }
-#lov_button:hover h4 {
-    color: blue;
+#lov_button:hover {
+    background-color: lightblue;
 }
 #main_content {
     width: 700px;
-    height: 600px;
-    margin-top: 50px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     border-top: 2px solid dimgrey;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     position: relative;
 }
 #footer a {
