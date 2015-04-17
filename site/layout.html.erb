@@ -21,73 +21,80 @@
     </script>
 
 </head>
+
 <body>
-<div id="cookie_acceptans"></div>
-<div id="header">
-    <img src="img/ystad_friskola_logo.jpg">
-</div>
 
-<div id="header_buttons">
-    <a href="klass_7.html">
-        <div id="klass_7_button">
-            <h4>Klass 7</h4>
-        </div>
-    </a>
-    <a href="klass_8.html">
-        <div id="klass_8_button">
-            <h4>Klass 8</h4>
-        </div>
-    </a>
-    <a href="klass_9.html">
-        <div id="klass_9_button">
-            <h4>Klass 9</h4>
-        </div>
-    </a>
-    <a href="om_skolan.html">
-        <div id="om_skolan_button">
-            <h4>Om skolan</h4>
-        </div>
-    </a>
-    <a href="schema.html">
-        <div id="schema_button">
-            <h4>Schema</h4>
-        </div>
-    </a>
-    <a href="matsedel.html">
-        <div id="matsedel_button">
-            <h4>Matsedel</h4>
-        </div>
-    </a>
-    <a href="lov.html">
-        <div id="lov_button">
-            <h4>Lov</h4>
-        </div>
-    </a>
-</div>
+<!--holding webpage in place-->
+<div id="webpage_holder">
 
-<div id="main_content">
-    <%= yield %>
-</div>
 
-<div id="footer">
-    <a href="javascript:changeStyle('not_colorblind')">
-        <div id="not_colorblind_button">
-            <p>Inte färgblind</p>
-        </div>
-    </a>
-    <a href="javascript:changeStyle('colorblind')">
-        <div id="colorblind_button">
-            <p>Färgblind</p>
-        </div>
-    </a>
+    <!--holder for buttons-->
+    <div id="header_buttons">
+        <a href="klass_7.html">
+            <div id="klass_7_button">
+                <h4>Klass 7</h4>
+            </div>
+        </a>
+        <a href="klass_8.html">
+            <div id="klass_8_button">
+                <h4>Klass 8</h4>
+            </div>
+        </a>
+        <a href="klass_9.html">
+            <div id="klass_9_button">
+                <h4>Klass 9</h4>
+            </div>
+        </a>
+        <a href="om_skolan.html">
+            <div id="om_skolan_button">
+                <h4>Om skolan</h4>
+            </div>
+        </a>
+        <a href="schema.html">
+            <div id="schema_button">
+                <h4>Schema</h4>
+            </div>
+        </a>
+        <a href="matsedel.html">
+            <div id="matsedel_button">
+                <h4>Matsedel</h4>
+            </div>
+        </a>
+        <a href="lov.html">
+            <div id="lov_button">
+                <h4>Lov</h4>
+            </div>
+        </a>
+    </div>
 
-    <div id="footer_info">
-        <p>
-            Mail: <a href="mailto:youmad@ystadfriskola.se">youmad@ystadfriskola.se</a>
-            Telefon: 112 12345679-235
-            Adress: Komintehitvägen 2
-        </p>
+    <!--box for all important content-->
+    <div id="main_content">
+        <%= yield %>
+    </div>
+
+    <div id="footer">
+        <a href="javascript:changeStyle('not_colorblind')">
+            <div id="not_colorblind_button">
+                <p>Inte färgblind</p>
+            </div>
+        </a>
+        <a href="javascript:changeStyle('colorblind')">
+            <div id="colorblind_button">
+                <p>Färgblind</p>
+            </div>
+        </a>
+
+        <div id="footer_info">
+            <p>
+                Mail: <a href="mailto:youmad@ystadfriskola.se">youmad@ystadfriskola.se</a>
+                Telefon: 112 12345679-235
+                Adress: Komintehitvägen 2
+            </p>
+        </div>
+
     </div>
 </div>
+
 </body>
+
 </html>
