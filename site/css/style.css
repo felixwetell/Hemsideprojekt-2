@@ -116,3 +116,20 @@ h1, h2, h3, h4, h5, h6, a, p {
 #not_colorblind_button p {
     color: whitesmoke;
 }
+.article {
+    width: 640px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-bottom: 1px solid dimgrey;
+}
+#om_skolan_info {
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid dimgrey;
+}
+.om_skolan_image_link
