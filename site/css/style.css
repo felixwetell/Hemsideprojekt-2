@@ -137,6 +137,13 @@ h1, h2, h3, h4, h5, h6, a, p {
     padding: 5px 10px;
     border-bottom: 1px solid dimgrey;
 }
+.klass_article {
+    width: 650px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid dimgrey;
+}
 #om_skolan_info {
     width: 600px;
     height: auto;
@@ -144,4 +151,17 @@ h1, h2, h3, h4, h5, h6, a, p {
     margin-right: auto;
     border-bottom: 1px solid dimgrey;
 }
-.om_skolan_image_link
+#om_skolan_link_holder {
+    width: 620px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.om_skolan_image_link img {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    float: left;
+    margin: 10px 30px;
+}
