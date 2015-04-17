@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: whitesmoke;
+    overflow-x: auto;
 }
 h1, h2, h3, h4, h5, h6, a, p {
     font-family: Arial;
@@ -34,9 +35,9 @@ h1, h2, h3, h4, h5, h6, a, p {
 #header_buttons div  {
     width: 100px;
     height: 40px;
-    margin-left: 60px;
+    margin-left: 63px;
     padding-bottom: 10px;
-    border: 1px solid orangered;
+    border: 3px solid orangered;
     border-top: none;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
