@@ -129,6 +129,11 @@ h1, h2, h3, h4, h5, h6, a, p {
 #not_colorblind_button p {
     color: whitesmoke;
 }
+#page_h1 {
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
 .article {
     width: 640px;
     height: 150px;
