@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head lang="sv">
+
     <meta charset="UTF-8">
     <title>Ystad Friskola</title>
     <link rel="stylesheet" type="text/css" href="css/style_colorblind.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
     <script language="javascript">
+
+        if(localStorage.stylename == undefined){
+            localStorage.stylename = "not_colorblind";
+            document.getElementsByTagName('link')[1].href = 'css/style.css';
+        } else if (localStorage.stylename == "colorblind"){
+            document.getElementsByTagName('link')[1].href = 'css/style_colorblind.css';
+        } else {
+            document.getElementsByTagName('link')[1].href = 'css/style.css';
+        }
+
         function changeStyle(name) {
             if (name == 'not_colorblind') {
                 document.getElementsByTagName('link')[1].href = 'css/style.css';
-                document.cookie = "colorblind=false";
+                localStorage.stylename = "not_colorblind";
             }
             else if (name == 'colorblind') {
                 document.getElementsByTagName('link')[1].href = 'css/style_colorblind.css';
-                document.cookie = "colorblind=true";
+                localStorage.stylename = "colorblind";
             }
-
         }
     </script>
 
