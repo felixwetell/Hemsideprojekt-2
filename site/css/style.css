@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     top: 10px;
 }
 #klass_7_button:hover {
-    background-color: lightblue;
+    background-color: #00B295;
 }
 #klass_8_button:hover {
     background-color: lightblue;
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     margin-right: 0;
 }
 #footer_info a{
-    color: blue;
+    color: #00B295;
 }
 #colorblind_button {
     width: 85px;
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     color: whitesmoke;
 }
 #page_h1 {
-    color: blue;
+    color: #00B295;
     text-decoration: underline;
     text-align: center;
 }
