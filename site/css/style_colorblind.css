@@ -1,12 +1,15 @@
 body {
     margin: 0;
     background-color: whitesmoke;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 h1, h2, h3, h4, h5, h6, a, p {
     font-family: Arial;
     color: black;
     text-decoration: none;
+}
+#webpage_holder {
+    position: relative;
 }
 #header {
     width: 1260px;
@@ -15,16 +18,18 @@ h1, h2, h3, h4, h5, h6, a, p {
     margin-right: auto;
 }
 #header_buttons {
-    width: 2000px;
+    width: 1260px;
     height: 41px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 #header_buttons div  {
     width: 100px;
     height: 40px;
-    margin-left: 3.5%;
+    margin-left: 63px;
     padding-bottom: 10px;
-    border: 1px solid dimgrey;
+    border: 3px solid orangered;
     border-top: none;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -37,31 +42,30 @@ h1, h2, h3, h4, h5, h6, a, p {
 #header_buttons h4 {
     top: 10px;
 }
-#klass_7_button:hover h4 {
-    color: dimgrey;
+#klass_7_button:hover {
+    background-color: lightblue;
 }
-#klass_8_button:hover h4 {
-    color: dimgrey;
+#klass_8_button:hover {
+    background-color: lightblue;
 }
-#klass_9_button:hover h4 {
-    color: dimgrey;
+#klass_9_button:hover {
+    background-color: lightblue;
 }
-#om_skolan_button:hover h4 {
-    color: dimgrey;
+#om_skolan_button:hover {
+    background-color: lightblue;
 }
-#schema_button:hover h4 {
-    color: dimgrey;
+#schema_button:hover {
+    background-color: lightblue;
 }
-#matsedel_button:hover h4 {
-    color: dimgrey;
+#matsedel_button:hover {
+    background-color: lightblue;
 }
-#lov_button:hover h4 {
-    color: dimgrey;
+#lov_button:hover {
+    background-color: lightblue;
 }
 #main_content {
     width: 700px;
-    height: 600px;
-    margin-top: 50px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -73,6 +77,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     border-top: 2px solid dimgrey;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     position: relative;
 }
 #footer a {
@@ -115,4 +120,46 @@ h1, h2, h3, h4, h5, h6, a, p {
 }
 #not_colorblind_button p {
     color: whitesmoke;
+}
+#page_h1 {
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
+.article {
+    width: 640px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-bottom: 1px solid dimgrey;
+}
+.klass_article {
+    width: 650px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid dimgrey;
+}
+#om_skolan_info {
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid dimgrey;
+}
+#om_skolan_link_holder {
+    width: 620px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.om_skolan_image_link img {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    float: left;
+    margin: 10px 30px;
 }
