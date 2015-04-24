@@ -1,2 +1,96 @@
 <%= yield %>
 <h1 id="page_h1">Inriktningar</h1>
+<script type="text/javascript">
+
+    function showDiv(idInfo) {
+        var sel = document.getElementById('divlinks').getElementsByTagName('div');
+        for (var i = 0; i < sel.length; i++) {
+            sel[i].style.display = 'none';
+        }
+        document.getElementById('container' + idInfo).style.display = 'block';
+        return false;
+    }
+</script>
+
+<div id="linkdiv_holder">
+    <div id="linkdiv">
+        <a href="#" onclick="return showDiv('1')"><h3>Innebandy</h3></a>
+        <a href="#" onclick="return showDiv('2')"><h3>Fotboll</h3></a>
+        <a href="#" onclick="return showDiv('3')"><h3>Landsvägcykling</h3></a>
+        <a href="#" onclick="return showDiv('4')"><h3>Boxning</h3></a>
+    </div>
+    <h2>Tryck på en Inriktning till <a style="color: #00B295;">vänster</a> för att läsa om den.</h2>
+</div>
+
+<!-- The 4 container content divs. -->
+<div id="divlinks">
+    <div id="container1">
+        <h3>Innebandy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis
+                dolor at mi consequat ornare. Ut dignissim elementum orci, sit amet semper ante venenatis eu. Ut mattis
+                ligula
+                ipsum, at imperdiet leo ullamcorper at. In ac dolor vestibulum, luctus dui sit amet, varius lectus.
+                Suspendisse
+                ut est at lorem blandit efficitur. Curabitur placerat ut magna commodo hendrerit. Nam pharetra est
+                tortor,
+                sit
+                amet molestie est sollicitudin at. Cras sapien nisl, malesuada quis placerat vitae, vehicula et sem.
+                Fusce
+                turpis eros, ultricies quis elit quis, maximus hendrerit metus. In hac habitasse platea dictumst.
+                Praesent
+                eleifend elementum nunc eu mollis. Proin tincidunt mauris felis, vitae mattis erat porttitor non.
+            </p>
+        <img src="img/">
+    </div>
+    <div id="container2">
+        <h3>Fotboll</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis
+            dolor at mi consequat ornare. Ut dignissim elementum orci, sit amet semper ante venenatis eu. Ut mattis
+            ligula
+            ipsum, at imperdiet leo ullamcorper at. In ac dolor vestibulum, luctus dui sit amet, varius lectus.
+            Suspendisse
+            ut est at lorem blandit efficitur. Curabitur placerat ut magna commodo hendrerit. Nam pharetra est tortor,
+            sit
+            amet molestie est sollicitudin at. Cras sapien nisl, malesuada quis placerat vitae, vehicula et sem. Fusce
+            turpis eros, ultricies quis elit quis, maximus hendrerit metus. In hac habitasse platea dictumst. Praesent
+            eleifend elementum nunc eu mollis. Proin tincidunt mauris felis, vitae mattis erat porttitor non.
+        </p>
+    </div>
+    <div id="container3">
+        <h3>Landsvägscykling</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis
+            dolor at mi consequat ornare. Ut dignissim elementum orci, sit amet semper ante venenatis eu. Ut mattis
+            ligula
+            ipsum, at imperdiet leo ullamcorper at. In ac dolor vestibulum, luctus dui sit amet, varius lectus.
+            Suspendisse
+            ut est at lorem blandit efficitur. Curabitur placerat ut magna commodo hendrerit. Nam pharetra est tortor,
+            sit
+            amet molestie est sollicitudin at. Cras sapien nisl, malesuada quis placerat vitae, vehicula et sem. Fusce
+            turpis eros, ultricies quis elit quis, maximus hendrerit metus. In hac habitasse platea dictumst. Praesent
+            eleifend elementum nunc eu mollis. Proin tincidunt mauris felis, vitae mattis erat porttitor non.
+        </p>
+    </div>
+    <div id="container4">
+        <h3>Boxning</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis
+            dolor at mi consequat ornare. Ut dignissim elementum orci, sit amet semper ante venenatis eu. Ut mattis
+            ligula
+            ipsum, at imperdiet leo ullamcorper at. In ac dolor vestibulum, luctus dui sit amet, varius lectus.
+            Suspendisse
+            ut est at lorem blandit efficitur. Curabitur placerat ut magna commodo hendrerit. Nam pharetra est tortor,
+            sit
+            amet molestie est sollicitudin at. Cras sapien nisl, malesuada quis placerat vitae, vehicula et sem. Fusce
+            turpis eros, ultricies quis elit quis, maximus hendrerit metus. In hac habitasse platea dictumst. Praesent
+            eleifend elementum nunc eu mollis. Proin tincidunt mauris felis, vitae mattis erat porttitor non.
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        showDiv('1');
+    }
+</script>
