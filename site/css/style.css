@@ -169,6 +169,26 @@ h1, a, p {
     float: left;
     margin: 10px 30px;
 }
+.personal_info {
+    width: 600px;
+    height: 200px;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.personal_info img {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    float: left;
+}
+.personal_info a {
+    color: #00B295;
+}
+.personal_info a:hover {
+     text-decoration: underline;
+ }
 .inriktningar_text_box {
     width: 100px;
     height: 100px;
