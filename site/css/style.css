@@ -222,3 +222,10 @@ h1, a, p {
     border: 2px solid orangered;
     border-radius: 5px
 }
+#schema_box {
+    width: 700px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px ridge dimgrey;
+}
