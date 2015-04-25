@@ -228,4 +228,12 @@ h1, a, p {
     margin-left: auto;
     margin-right: auto;
     border: 2px ridge dimgrey;
+.lov_article {
+    width: 500px;
+    height: 200px;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-bottom: 2px ridge dimgrey;
 }
