@@ -9,10 +9,10 @@
 
     <script language="javascript">
 
-        if(localStorage.stylename == undefined){
+        if (localStorage.stylename == undefined) {
             localStorage.stylename = "not_colorblind";
             document.getElementsByTagName('link')[1].href = 'css/style.css';
-        } else if (localStorage.stylename == "colorblind"){
+        } else if (localStorage.stylename == "colorblind") {
             document.getElementsByTagName('link')[1].href = 'css/style_colorblind.css';
         } else {
             document.getElementsByTagName('link')[1].href = 'css/style.css';
@@ -90,7 +90,9 @@
 
     <!--box for all important content-->
     <div id="main_content">
+
         <%= yield %>
+
     </div>
 
     <div id="footer">
