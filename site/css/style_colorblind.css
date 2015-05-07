@@ -3,25 +3,43 @@ body {
     background-color: whitesmoke;
     overflow-x: auto;
 }
+
 h2, h3, h4, h5, h6 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     color: dimgrey;
     text-decoration: none;
 }
+
 h1, a, p {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     color: black;
     text-decoration: none;
 }
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#header {
+    width: 100%;
+    height: 100%;
+}
+
+.sprite-ystad_friskola_logo {
+    width: 1260px;
+    height: 150px;
+    background-position: -5px -715px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
 #webpage_holder {
     position: relative;
 }
-#header {
-    width: 1260px;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 #header_buttons {
     width: 1260px;
     height: 41px;
@@ -29,7 +47,8 @@ h1, a, p {
     margin-right: auto;
     position: relative;
 }
-#header_buttons div  {
+
+#header_buttons div {
     width: 100px;
     height: 40px;
     margin-left: 45px;
@@ -44,36 +63,47 @@ h1, a, p {
     float: left;
     z-index: 2;
 }
+
 #header_buttons h4 {
     color: black;
 }
+
 #header_buttons h4 {
     top: 10px;
 }
+
 #index_button:hover {
     background-color: lightgrey;
 }
+
 #klass_7_button:hover {
     background-color: lightgrey;
 }
+
 #klass_8_button:hover {
     background-color: lightgrey;
 }
+
 #klass_9_button:hover {
     background-color: lightgrey;
 }
+
 #om_skolan_button:hover {
     background-color: lightgrey;
 }
+
 #schema_button:hover {
     background-color: lightgrey;
 }
+
 #matsedel_button:hover {
     background-color: lightgrey;
 }
+
 #lov_button:hover {
     background-color: lightgrey;
 }
+
 #main_content {
     width: 700px;
     height: auto;
@@ -83,6 +113,7 @@ h1, a, p {
     position: relative;
     z-index: 1;
 }
+
 #footer {
     width: 800px;
     height: 100px;
@@ -92,18 +123,22 @@ h1, a, p {
     margin-top: 40px;
     position: relative;
 }
+
 #footer a {
     text-decoration: underline;
 }
+
 #footer_info {
     width: 250px;
     height: auto;
     margin-top: 20px;
     margin-right: 0;
 }
-#footer_info a{
+
+#footer_info a {
     color: dimgrey;
 }
+
 #colorblind_button {
     width: 85px;
     height: 30px;
@@ -116,9 +151,11 @@ h1, a, p {
     text-align: center;
     background-color: dimgrey;
 }
+
 #colorblind_button p {
     color: whitesmoke;
 }
+
 #not_colorblind_button {
     width: 100px;
     height: 30px;
@@ -130,16 +167,19 @@ h1, a, p {
     padding: 2px 5px;
     float: right;
     text-align: center;
-    background-color: orangered;
+    background-color: #ff4900;
 }
+
 #not_colorblind_button p {
     color: whitesmoke;
 }
+
 #page_h1 {
     color: dimgrey;
     text-decoration: underline;
     text-align: center;
 }
+
 .article {
     width: 640px;
     height: 150px;
@@ -149,6 +189,7 @@ h1, a, p {
     padding: 5px 10px;
     border-bottom: 1px solid dimgrey;
 }
+
 .klass_article {
     width: 650px;
     height: auto;
@@ -156,6 +197,7 @@ h1, a, p {
     margin-right: auto;
     border-bottom: 1px solid dimgrey;
 }
+
 #om_skolan_info {
     width: 600px;
     height: auto;
@@ -163,20 +205,39 @@ h1, a, p {
     margin-right: auto;
     border-bottom: 1px solid dimgrey;
 }
+
 #om_skolan_link_holder {
     width: 620px;
     height: 270px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    position: relative;
 }
-.om_skolan_image_link img {
-    width: auto;
-    height: auto;
-    border-radius: 15px;
+
+.sprite-inriktningar {
+    width: 250px;
+    height: 250px;
+    background-position: -5px -5px;
     float: left;
     margin: 10px 30px;
+    border-radius: 10px
 }
+
+.sprite-skolpersonal {
+    width: 250px;
+    height: 250px;
+    background-position: -945px -455px;
+    float: left;
+    margin: 10px 30px;
+    border-radius: 10px;
+}
+
+.sprite-skolpersonal a {
+    width: 100%;
+    height: 100%;
+}
+
 .personal_info {
     width: 600px;
     height: 200px;
@@ -185,36 +246,45 @@ h1, a, p {
     margin-right: auto;
     margin-top: 20px;
 }
-.personal_info img {
+
+.sprite-personal_picture {
     width: 180px;
     height: 180px;
+    background-position: -945px -265px;
     margin: 10px;
     float: left;
 }
+
 .personal_info a {
     color: dimgrey;
 }
+
 .personal_info a:hover {
     text-decoration: underline;
 }
+
 .inriktningar_text_box {
     width: 100px;
     height: 100px;
     background-color: lightgrey;
 }
+
 #linkdiv_holder {
     width: 600px;
     height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
+
 #linkdiv_holder h2 {
     padding-top: 65px;
     color: black;
 }
+
 #linkdiv_holder a {
     color: dimgrey;
 }
+
 #linkdiv {
     width: 200px;
     height: 180px;
@@ -224,15 +294,49 @@ h1, a, p {
     border-radius: 5px;
     padding-left: 5px;
 }
+
 #container1, #container2, #container3, #container4 {
     width: 600px;
     height: 500px;
-    padding: 3px;
+    padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black;
+    border: 2px solid dimgrey;
     border-radius: 5px
 }
+
+.sprite-inriktningar_image_boxning {
+    width: 460px;
+    height: 250px;
+    background-position: -265px -5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sprite-inriktningar_image_fotboll {
+    width: 460px;
+    height: 250px;
+    background-position: -735px -5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sprite-inriktningar_image_innebandy {
+    width: 460px;
+    height: 250px;
+    background-position: -5px -265px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sprite-inriktningar_image_landsvagscycling {
+    width: 460px;
+    height: 250px;
+    background-position: -475px -265px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #schema_box {
     width: 700px;
     height: 550px;
@@ -240,10 +344,12 @@ h1, a, p {
     margin-right: auto;
     border: 2px ridge dimgrey;
 }
+
 #matsedel_box {
     width: 700px;
     height: auto;
 }
+
 .matsedel_weeks {
     width: 248px;
     height: auto;
@@ -255,6 +361,7 @@ h1, a, p {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 .lov_article {
     width: 500px;
     height: 200px;
