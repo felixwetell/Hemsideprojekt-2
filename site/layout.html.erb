@@ -9,6 +9,13 @@
 
     <script language="javascript">
 
+        window.onload = function () {
+            setTimeout(function () {
+                var t = performance.timing;
+                console.log(t.loadEventEnd - t.responseEnd);
+            }, 0);
+        }
+
         if (localStorage.stylename == undefined) {
             localStorage.stylename = "not_colorblind";
             document.getElementsByTagName('link')[1].href = 'css/style.css';
