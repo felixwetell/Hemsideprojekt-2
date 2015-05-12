@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/style_colorblind.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    <script language="javascript">
+    <!--This JavaScript is timing the load time of every page in console.-->
+    <script language="JavaScript">
 
         window.onload = function () {
             setTimeout(function () {
@@ -15,7 +16,11 @@
                 console.log(t.loadEventEnd - t.responseEnd);
             }, 0);
         }
+    </script>
 
+    <!--This JavaScript creates the possibility to change CSS files, between non-colorblind and colorblind and
+    stores the choice using localstorage otherwise called webstorage-->
+    <script language="JavaScript">
         if (localStorage.stylename == undefined) {
             localStorage.stylename = "not_colorblind";
             document.getElementsByTagName('link')[1].href = 'css/style.css';
@@ -41,82 +46,79 @@
 
 <body>
 
-<!--holding webpage in place-->
-<div id="webpage_holder">
+<!--Header picture of school-->
+<div class="sprite sprite-ystad_friskola_logo"><a id="header"></a></div>
 
-    <div class="sprite sprite-ystad_friskola_logo"><a id="header"></a></div>
-
-    <!--holder for buttons-->
-    <div id="nav_bar">
-        <a href="index.html">
-            <div id="index_button">
-                <h4>Startsida</h4>
-            </div>
-        </a>
-        <a href="klass_7.html">
-            <div id="klass_7_button">
-                <h4>Klass 7</h4>
-            </div>
-        </a>
-        <a href="klass_8.html">
-            <div id="klass_8_button">
-                <h4>Klass 8</h4>
-            </div>
-        </a>
-        <a href="klass_9.html">
-            <div id="klass_9_button">
-                <h4>Klass 9</h4>
-            </div>
-        </a>
-        <a href="om_skolan.html">
-            <div id="om_skolan_button">
-                <h4>Om skolan</h4>
-            </div>
-        </a>
-        <a href="schema.html">
-            <div id="schema_button">
-                <h4>Schema</h4>
-            </div>
-        </a>
-        <a href="matsedel.html">
-            <div id="matsedel_button">
-                <h4>Matsedel</h4>
-            </div>
-        </a>
-        <a href="lov.html">
-            <div id="lov_button">
-                <h4>Lov</h4>
-            </div>
-        </a>
-    </div>
-
-    <!--box for all important content-->
-    <div id="main_content">
-
-        <%= yield %>
-
-    </div>
-
-    <div id="footer">
-        <a href="javascript:changeStyle('not_colorblind')">
-            <div id="not_colorblind_button">
-                <p style="cursor: pointer">Inte färgblind</p>
-            </div>
-        </a>
-        <a href="javascript:changeStyle('colorblind')">
-            <div id="colorblind_button">
-                <p style="cursor: pointer">Färgblind</p>
-            </div>
-        </a>
-
-        <div id="footer_info">
-            <p>
-                Mail: <a href="mailto:youmad@ystadfriskola.se">youmad@ystadfriskola.se</a>
-                Telefon: 112 12345679-235
-                Adress: Komintehitvägen 2
-            </p>
+<!--holder for buttons-->
+<div id="nav_bar">
+    <a href="index.html">
+        <div id="index_button">
+            <h4>Startsida</h4>
         </div>
+    </a>
+    <a href="klass_7.html">
+        <div id="klass_7_button">
+            <h4>Klass 7</h4>
+        </div>
+    </a>
+    <a href="klass_8.html">
+        <div id="klass_8_button">
+            <h4>Klass 8</h4>
+        </div>
+    </a>
+    <a href="klass_9.html">
+        <div id="klass_9_button">
+            <h4>Klass 9</h4>
+        </div>
+    </a>
+    <a href="om_skolan.html">
+        <div id="om_skolan_button">
+            <h4>Om skolan</h4>
+        </div>
+    </a>
+    <a href="schema.html">
+        <div id="schema_button">
+            <h4>Schema</h4>
+        </div>
+    </a>
+    <a href="matsedel.html">
+        <div id="matsedel_button">
+            <h4>Matsedel</h4>
+        </div>
+    </a>
+    <a href="lov.html">
+        <div id="lov_button">
+            <h4>Lov</h4>
+        </div>
+    </a>
+</div>
 
+<!--box for all important content-->
+<div id="main_content">
+
+    <%= yield %>
+
+</div>
+
+<!--Footer with buttons using JavaScript to change CSS file and other information-->
+<div id="footer">
+    <a href="javascript:changeStyle('not_colorblind')">
+        <div id="not_colorblind_button">
+            <p style="cursor: pointer">Inte färgblind</p>
+        </div>
+    </a>
+    <a href="javascript:changeStyle('colorblind')">
+        <div id="colorblind_button">
+            <p style="cursor: pointer">Färgblind</p>
+        </div>
+    </a>
+
+    <div id="footer_info">
+        <p>
+            Mail: <a href="mailto:youmad@ystadfriskola.se">youmad@ystadfriskola.se</a>
+            Telefon: 112 12345679-235
+            Adress: Komintehitvägen 2
+        </p>
     </div>
 
 </div>

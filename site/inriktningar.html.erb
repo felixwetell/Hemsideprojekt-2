@@ -1,5 +1,7 @@
 <%= yield %>
 <h1 id="page_header">Inriktningar</h1>
+
+<!--JavaSript to change divs containing information-->
 <script type="text/javascript">
 
     function showDiv(idInfo) {
@@ -9,6 +11,13 @@
         }
         document.getElementById('container' + idInfo).style.display = 'block';
         return false;
+    }
+</script>
+
+<!--When page is loaded, shows 'div1'-->
+<script type="text/javascript">
+    window.onload = function () {
+        showDiv('1');
     }
 </script>
 
@@ -25,7 +34,7 @@
     <h2>Tryck på en inriktning till <a>vänster</a> för att läsa om den</h2>
 </div>
 
-<!-- The 4 container content divs. -->
+<!-- The 4 container content divs -->
 <div id="divlinks">
     <div id="container1">
         <h3>Innebandy</h3>
@@ -95,9 +104,3 @@
         <span class="sprite sprite-inriktningar_image_boxning"></span>
     </div>
 </div>
-
-<script type="text/javascript">
-    window.onload = function () {
-        showDiv('1');
-    }
-</script>
